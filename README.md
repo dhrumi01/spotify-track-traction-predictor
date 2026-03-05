@@ -66,7 +66,7 @@ Run all 8 cells in order. Cells 3, 5, and 6 save the dashboard figures to your w
 
 ## How this connects to the rest of my portfolio
 
-This project and the [Spotify A/B Test Analysis](https://github.com/dhrumi01/spotify-ab-test-analysis) are meant to be read together. The A/B test identified *when* users churn. This model identifies *what* to show them before they get there. One project asks what happens when you restrict the experience — the other asks how to improve it instead.
+This project and the [Spotify A/B Test Analysis](https://github.com/dhrumi01/Spotify-Freemium-Paywall-) are meant to be read together. The A/B test identified *when* users churn. This model identifies *what* to show them before they get there. One project asks what happens when you restrict the experience — the other asks how to improve it instead.
 
 ---
 
