@@ -60,7 +60,7 @@ Run all 8 cells in order. Cells 3, 5, and 6 save the dashboard figures to your w
 ![Model Comparison](fig2_models.png)
 
 ### Feature Importance
-![Feature Importance](fig3_feature_importance.png)
+![Feature Importance](fig3_importance.png)
 
 ---
 
