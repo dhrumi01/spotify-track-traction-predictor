@@ -57,7 +57,7 @@ Run all 8 cells in order. Cells 3, 5, and 6 save the dashboard figures to your w
 ![EDA Dashboard](fig1_eda.png)
 
 ### Model Performance Comparison
-![Model Comparison](fig2_model_comparison.png)
+![Model Comparison](fig2_models.png)
 
 ### Feature Importance
 ![Feature Importance](fig3_feature_importance.png)
