@@ -51,18 +51,16 @@ Run all 8 cells in order. Cells 3, 5, and 6 save the dashboard figures to your w
 
 ---
 
-## Files
+## Visualizations
 
-```
-spotify-track-traction-predictor/
-│
-├── Spotify_Track_Traction_Predictor.ipynb
-├── spotify_2015_2025_85k.csv
-├── fig1_eda.png
-├── fig2_model_comparison.png
-├── fig3_feature_importance.png
-└── README.md
-```
+### Exploratory Data Analysis
+![EDA Dashboard](fig1_eda.png)
+
+### Model Performance Comparison
+![Model Comparison](fig2_model_comparison.png)
+
+### Feature Importance
+![Feature Importance](fig3_feature_importance.png)
 
 ---
 
