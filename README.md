@@ -1,6 +1,6 @@
 # Spotify Track Traction Predictor
 
-This project started as a follow-up question to my Spotify A/B test analysis. That project found that Power Users churn hard when skip limits are applied — they don't upgrade, they leave. Which raised an obvious question: what if instead of frustrating users into upgrading, you just surfaced better tracks to them in the first place?
+This project started as a follow-up question to my Spotify A/B test analysis. That project found that Power Users churn hard when skip limits are applied they don't upgrade, they leave. Which raised an obvious question: what if instead of frustrating users into upgrading, you just surfaced better tracks to them in the first place?
 
 This model tries to answer the upstream version of that problem: **can we predict which tracks are going to gain traction, before they chart?**
 
@@ -8,7 +8,7 @@ This model tries to answer the upstream version of that problem: **can we predic
 
 ## What it does
 
-Takes 85,000 Spotify tracks (2015–2025) with audio features — danceability, energy, tempo, loudness, instrumentalness — plus metadata like genre, market, and release timing, and predicts whether a track will land in the top 25% of popularity scores.
+Takes 85,000 Spotify tracks (2015–2025) with audio features danceability, energy, tempo, loudness, instrumentalness plus metadata like genre, market, and release timing, and predicts whether a track will land in the top 25% of popularity scores.
 
 The output isn't just a model accuracy number. The final cell scores every track into one of three tiers with a recommended action for each:
 
@@ -26,7 +26,7 @@ I tested three models deliberately, not just to find the best one but to show th
 
 **Random Forest** handles non-linearity and is robust to outliers. AUC 0.866. The trade-off is it's slower and harder to explain to a non-technical stakeholder.
 
-**Gradient Boosting** was the winner at AUC 0.867 — it corrects errors sequentially, which works well here because the features interact (a track that's both high energy AND highly danceable behaves differently than one that's just one of those things). That's why I engineered `energy × danceability` as an explicit feature.
+**Gradient Boosting** was the winner at AUC 0.867 it corrects errors sequentially, which works well here because the features interact (a track that's both high energy AND highly danceable behaves differently than one that's just one of those things). That's why I engineered `energy × danceability` as an explicit feature.
 
 ---
 
@@ -34,7 +34,7 @@ I tested three models deliberately, not just to find the best one but to show th
 
 I ran two importance methods on purpose because they tell different stories.
 
-Built-in importance (impurity-based) is fast but can overstate features that have many possible split points. Permutation importance is more honest — it shuffles each feature and measures how much the model's AUC actually drops. If a feature doesn't hurt performance when scrambled, it wasn't really doing anything.
+Built-in importance (impurity-based) is fast but can overstate features that have many possible split points. Permutation importance is more honest it shuffles each feature and measures how much the model's AUC actually drops. If a feature doesn't hurt performance when scrambled, it wasn't really doing anything.
 
 Stream count and release timing came out as the strongest signals. Among pure audio features, tempo and the energy-dance interaction mattered most. Genre differences were surprisingly small — Spotify's algorithm appears to surface strong tracks fairly evenly across genres.
 
