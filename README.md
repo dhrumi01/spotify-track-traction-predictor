@@ -71,4 +71,4 @@ This project and the [Spotify A/B Test Analysis](https://github.com/dhrumi01/Spo
 ---
 
 *Dhrumi Kansara · MS Business Analytics · Arizona State University*  
-[LinkedIn](#) · [GitHub](#)
+[LinkedIn](#)[LinkedIn](https://linkedin.com/in/dhrumikansara) · [GitHub](#)[GitHub](https://github.com/dhrumi01)
